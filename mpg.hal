@@ -1,0 +1,57 @@
+# 4 axis MPG with incriment select
+# Multiplexed to use a total of 4 input pins
+# Writen by: Kurt Jacobson
+# Date: 2/23/2017 1:02PM
+
+loadrt mpg
+addf mpg.0 servo-thread
+
+# Set jog mode. For position mode set to 0, for velocity mode set to 1
+setp joint.0.jog-vel-mode 0
+setp axis.x.jog-vel-mode 0
+
+setp joint.1.jog-vel-mode 0
+setp axis.y.jog-vel-mode 0
+
+setp joint.2.jog-vel-mode 1
+setp axis.z.jog-vel-mode 1
+
+setp joint.3.jog-vel-mode 0
+setp axis.a.jog-vel-mode 0
+
+# Set pulses per MPG detent
+#setp mpg.0.mpg-pulses 4
+
+# Set selectable jog scales (these are set to default values by the MPG HAL comp)
+#setp mpg.0.mpg-scale1 0.01
+#setp mpg.0.mpg-scale2 0.001
+#setp mpg.0.mpg-scale3 0.0001
+#setp mpg.0.mpg-scale4 0.00001
+
+# Multiplexed inputs from axis selection switch
+net axis1 mpg.0.axis0 <= hm2_5i25.0.7i76.0.0.input-04
+net axis2 mpg.0.axis1 <= hm2_5i25.0.7i76.0.0.input-05
+
+# Selected axis enable bit is sent to each axis jog enable 
+net mpg-x axis.x.jog-enable <= mpg.0.enable-x
+net mpg-y axis.y.jog-enable <= mpg.0.enable-y
+net mpg-z axis.z.jog-enable <= mpg.0.enable-z
+net mpg-a axis.a.jog-enable <= mpg.0.enable-a
+
+# Multiplexed inputs from scale selection switch
+net scale1 mpg.0.scale0 <= hm2_5i25.0.7i76.0.0.input-06
+net scale2 mpg.0.scale1 <= hm2_5i25.0.7i76.0.0.input-07
+
+# Selected mpg scale is sent to each axis jog scale
+net mpg-scale <= mpg.0.mpg-scale
+net mpg-scale => joint.0.jog-scale axis.x.jog-scale
+net mpg-scale => joint.1.jog-scale axis.y.jog-scale
+net mpg-scale => joint.2.jog-scale axis.z.jog-scale
+net mpg-scale => joint.3.jog-scale axis.a.jog-scale
+
+# Send the encoder counts to the axis. Only the selected axis will move.
+net encoder-counts  <= hm2_5i25.0.encoder.00.count
+net encoder-counts => joint.0.jog-counts axis.x.jog-counts
+net encoder-counts => joint.1.jog-counts axis.y.jog-counts
+net encoder-counts => joint.2.jog-counts axis.z.jog-counts
+net encoder-counts => joint.3.jog-counts axis.a.jog-counts
