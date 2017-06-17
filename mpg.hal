@@ -7,22 +7,27 @@ loadrt mpg
 addf mpg.0 servo-thread
 
 # Set jog mode. For position mode set to 0, for velocity mode set to 1
+# X-axis
 setp joint.0.jog-vel-mode 0
 setp axis.x.jog-vel-mode 0
 
+# Y-axis
 setp joint.1.jog-vel-mode 0
 setp axis.y.jog-vel-mode 0
 
+# Z-axis (I use velocity mode only on Z)
 setp joint.2.jog-vel-mode 1
 setp axis.z.jog-vel-mode 1
 
+# A-axis
 setp joint.3.jog-vel-mode 0
 setp axis.a.jog-vel-mode 0
 
 # Set pulses per MPG detent
 #setp mpg.0.mpg-pulses 4
 
-# Set selectable jog scales (these are set to default values by the MPG HAL comp)
+# Set selectable jog scales
+# These are set to default values by the mpg.comp. You can uncoment to set custom values.
 #setp mpg.0.mpg-scale1 0.01
 #setp mpg.0.mpg-scale2 0.001
 #setp mpg.0.mpg-scale3 0.0001
