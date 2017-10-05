@@ -1,0 +1,26 @@
+component pot "Potentioneter";
+
+description """Component for use with a potentiometer overrides. Takes a float 
+input, and returns an integer value equal to the input multiplied by gain."""; 
+
+license "GPL";
+author "Kurt Jacobson";
+function _;
+
+pin in float in;
+pin in float gain;
+param rw float hyst = 2;
+pin out s32 out "out = in * gain";
+
+;;
+FUNCTION(_) {
+
+    float outVal;
+    float outPrev;
+    outVal = in * gain;
+
+    if (outVal-hyst<=outPrev || outVal+hyst>=outPrev) {
+    out = outVal;
+    outPrev = out;
+    }
+}
