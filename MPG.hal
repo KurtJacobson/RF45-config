@@ -7,27 +7,15 @@ loadrt mpg
 addf mpg.0 servo-thread
 
 # Set jog mode. For position mode set to 0, for velocity mode set to 1
-# X-axis
-setp joint.0.jog-vel-mode 0
-setp axis.x.jog-vel-mode 0
-
-# Y-axis
-setp joint.1.jog-vel-mode 0
-setp axis.y.jog-vel-mode 0
-
-# Z-axis (I use velocity mode only on Z)
-setp joint.2.jog-vel-mode 1
-setp axis.z.jog-vel-mode 1
-
-# A-axis
-setp joint.3.jog-vel-mode 0
-setp axis.a.jog-vel-mode 0
+setp axis.0.jog-vel-mode 0
+setp axis.1.jog-vel-mode 0
+setp axis.2.jog-vel-mode 1
+setp axis.3.jog-vel-mode 0
 
 # Set pulses per MPG detent
 #setp mpg.0.mpg-pulses 4
 
 # Set selectable jog scales
-# These are set to default values by the mpg.comp. You can uncoment to set custom values.
 #setp mpg.0.mpg-scale1 0.01
 #setp mpg.0.mpg-scale2 0.001
 #setp mpg.0.mpg-scale3 0.0001
@@ -38,10 +26,10 @@ net axis1 mpg.0.axis0 <= hm2_5i25.0.7i76.0.0.input-04
 net axis2 mpg.0.axis1 <= hm2_5i25.0.7i76.0.0.input-05
 
 # Selected axis enable bit is sent to each axis jog enable 
-net mpg-x axis.x.jog-enable <= mpg.0.enable-x
-net mpg-y axis.y.jog-enable <= mpg.0.enable-y
-net mpg-z axis.z.jog-enable <= mpg.0.enable-z
-net mpg-a axis.a.jog-enable <= mpg.0.enable-a
+net mpg-x axis.0.jog-enable <= mpg.0.enable-x
+net mpg-y axis.1.jog-enable <= mpg.0.enable-y
+net mpg-z axis.2.jog-enable <= mpg.0.enable-z
+net mpg-a axis.3.jog-enable <= mpg.0.enable-a
 
 # Multiplexed inputs from scale selection switch
 net scale1 mpg.0.scale0 <= hm2_5i25.0.7i76.0.0.input-06
@@ -49,14 +37,14 @@ net scale2 mpg.0.scale1 <= hm2_5i25.0.7i76.0.0.input-07
 
 # Selected mpg scale is sent to each axis jog scale
 net mpg-scale <= mpg.0.mpg-scale
-net mpg-scale => joint.0.jog-scale axis.x.jog-scale
-net mpg-scale => joint.1.jog-scale axis.y.jog-scale
-net mpg-scale => joint.2.jog-scale axis.z.jog-scale
-net mpg-scale => joint.3.jog-scale axis.a.jog-scale
+net mpg-scale => axis.0.jog-scale
+net mpg-scale => axis.1.jog-scale
+net mpg-scale => axis.2.jog-scale
+net mpg-scale => axis.3.jog-scale
 
 # Send the encoder counts to the axis. Only the selected axis will move.
 net encoder-counts  <= hm2_5i25.0.encoder.00.count
-net encoder-counts => joint.0.jog-counts axis.x.jog-counts
-net encoder-counts => joint.1.jog-counts axis.y.jog-counts
-net encoder-counts => joint.2.jog-counts axis.z.jog-counts
-net encoder-counts => joint.3.jog-counts axis.a.jog-counts
+net encoder-counts => axis.0.jog-counts
+net encoder-counts => axis.1.jog-counts
+net encoder-counts => axis.2.jog-counts
+net encoder-counts => axis.3.jog-counts

@@ -2,7 +2,6 @@ loadrt pot count=2
 addf pot.0 servo-thread
 addf pot.1 servo-thread
 
-# Feed Override
 setp pot.0.gain 64
 setp halui.feed-override.count-enable true
 setp halui.feed-override.direct-value true
@@ -11,7 +10,7 @@ setp halui.feed-override.scale .001
 net maxvel-pot hm2_5i25.0.7i76.0.0.analogin0 => pot.0.in
 net maxvel-scaled pot.0.out => halui.feed-override.counts
 
-# Rapid Override
+
 setp pot.1.gain 43
 setp halui.rapid-override.count-enable true
 setp halui.rapid-override.direct-value true
