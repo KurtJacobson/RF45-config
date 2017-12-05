@@ -30,8 +30,8 @@
                             <property name="n_columns">3</property>
                             <child>
                               <object class="GtkButton" id="yp">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -40,8 +40,8 @@
                                 <signal name="released" handler="on_yp_released"/>
                                 <child>
                                   <object class="GtkImage" id="image4">
-                                    <property name="width_request">84</property>
-                                    <property name="height_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="yalign">0</property>
                                     <property name="pixbuf">Y+.png</property>
@@ -55,8 +55,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="xmyp">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -66,8 +66,8 @@
                                 <signal name="released" handler="on_xmyp_released"/>
                                 <child>
                                   <object class="GtkImage" id="image1">
-                                    <property name="width_request">84</property>
-                                    <property name="height_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="xalign">0</property>
                                     <property name="yalign">0</property>
@@ -82,8 +82,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="xpyp">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -93,8 +93,8 @@
                                 <signal name="released" handler="on_xpyp_released"/>
                                 <child>
                                   <object class="GtkImage" id="image2">
-                                    <property name="width_request">84</property>
-                                    <property name="height_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="xalign">1</property>
                                     <property name="yalign">0</property>
@@ -108,8 +108,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="xp">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -118,8 +118,8 @@
                                 <signal name="released" handler="on_xp_released"/>
                                 <child>
                                   <object class="GtkImage" id="image3">
-                                    <property name="width_request">84</property>
-                                    <property name="height_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="xalign">1</property>
                                     <property name="pixbuf">X+.png</property>
@@ -132,8 +132,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="xpym">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -143,8 +143,8 @@
                                 <signal name="released" handler="on_xpym_released"/>
                                 <child>
                                   <object class="GtkImage" id="image5">
-                                    <property name="width_request">84</property>
-                                    <property name="height_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="xalign">1</property>
                                     <property name="yalign">1</property>
@@ -155,8 +155,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="ym">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -165,8 +165,8 @@
                                 <signal name="released" handler="on_ym_released"/>
                                 <child>
                                   <object class="GtkImage" id="image6">
-                                    <property name="width_request">84</property>
-                                    <property name="height_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="yalign">1</property>
                                     <property name="pixbuf">Y-.png</property>
@@ -179,8 +179,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="xmym">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -190,8 +190,8 @@
                                 <signal name="released" handler="on_xmym_released"/>
                                 <child>
                                   <object class="GtkImage" id="image7">
-                                    <property name="width_request">84</property>
-                                    <property name="height_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="xalign">0</property>
                                     <property name="yalign">1</property>
@@ -205,8 +205,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="xm">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -215,7 +215,8 @@
                                 <signal name="released" handler="on_xm_released"/>
                                 <child>
                                   <object class="GtkImage" id="image8">
-                                    <property name="width_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="xalign">0</property>
                                     <property name="pixbuf">X-.png</property>
@@ -229,8 +230,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="xy_center">
-                                <property name="width_request">90</property>
-                                <property name="height_request">90</property>
+                                <property name="width_request">84</property>
+                                <property name="height_request">76</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -238,8 +239,8 @@
                                 <signal name="released" handler="on_xy_center_released"/>
                                 <child>
                                   <object class="GtkImage" id="image9">
-                                    <property name="width_request">84</property>
-                                    <property name="height_request">84</property>
+                                    <property name="width_request">78</property>
+                                    <property name="height_request">70</property>
                                     <property name="visible">True</property>
                                     <property name="pixbuf">xy_center.png</property>
                                   </object>
@@ -293,7 +294,7 @@
                             <property name="row_spacing">2</property>
                             <child>
                               <object class="GtkImage" id="image13">
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="tooltip_text" translatable="yes">Search Velocity</property>
                                 <property name="xalign">0.80000001192092896</property>
@@ -303,7 +304,7 @@
                             <child>
                               <object class="GtkSpinButton" id="spbtn1_search_vel">
                                 <property name="width_request">80</property>
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="tooltip_text" translatable="yes">Search Velocity</property>
@@ -323,7 +324,7 @@
                             </child>
                             <child>
                               <object class="GtkImage" id="image14">
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="tooltip_text" translatable="yes">Probe Velocity</property>
                                 <property name="xalign">0.80000001192092896</property>
@@ -336,7 +337,7 @@
                             </child>
                             <child>
                               <object class="GtkImage" id="image15">
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="tooltip_text" translatable="yes">Max probe  distance</property>
                                 <property name="xalign">0.60000002384185791</property>
@@ -349,7 +350,7 @@
                             </child>
                             <child>
                               <object class="GtkImage" id="image19">
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="tooltip_text" translatable="yes">Probe diameter</property>
                                 <property name="xalign">0.60000002384185791</property>
@@ -362,7 +363,7 @@
                             </child>
                             <child>
                               <object class="GtkImage" id="image20">
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="tooltip_text" translatable="yes">XY clearance</property>
                                 <property name="xalign">0.69999998807907104</property>
@@ -375,7 +376,7 @@
                             </child>
                             <child>
                               <object class="GtkImage" id="image21">
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="tooltip_text" translatable="yes">Edge length</property>
                                 <property name="xalign">0.69999998807907104</property>
@@ -389,7 +390,7 @@
                             <child>
                               <object class="GtkSpinButton" id="spbtn1_probe_vel">
                                 <property name="width_request">80</property>
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="tooltip_text" translatable="yes">Probe Velocity</property>
@@ -411,7 +412,7 @@
                             <child>
                               <object class="GtkSpinButton" id="spbtn1_probe_max">
                                 <property name="width_request">80</property>
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="tooltip_text" translatable="yes">Max probe  distance</property>
@@ -433,7 +434,7 @@
                             <child>
                               <object class="GtkSpinButton" id="spbtn1_probe_diam">
                                 <property name="width_request">80</property>
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="tooltip_text" translatable="yes">Probe diameter</property>
@@ -455,7 +456,7 @@
                             <child>
                               <object class="GtkSpinButton" id="spbtn1_xy_clearance">
                                 <property name="width_request">80</property>
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="tooltip_text" translatable="yes">XY clearance</property>
@@ -477,7 +478,7 @@
                             <child>
                               <object class="GtkSpinButton" id="spbtn1_edge_lenght">
                                 <property name="width_request">80</property>
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="tooltip_text" translatable="yes">Edge length</property>
@@ -498,7 +499,7 @@
                             </child>
                             <child>
                               <object class="GtkImage" id="image28">
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="tooltip_text" translatable="yes">Latch distance</property>
                                 <property name="xalign">0.60000002384185791</property>
@@ -512,7 +513,7 @@
                             <child>
                               <object class="GtkSpinButton" id="spbtn1_probe_latch">
                                 <property name="width_request">80</property>
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="tooltip_text" translatable="yes">Latch distance</property>
@@ -533,7 +534,7 @@
                             </child>
                             <child>
                               <object class="GtkImage" id="image29">
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="tooltip_text" translatable="yes">Z clearance</property>
                                 <property name="xalign">0.69999998807907104</property>
@@ -547,7 +548,7 @@
                             <child>
                               <object class="GtkSpinButton" id="spbtn1_z_clearance">
                                 <property name="width_request">80</property>
-                                <property name="height_request">30</property>
+                                <property name="height_request">26</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="tooltip_text" translatable="yes">Z clearance</property>
@@ -610,8 +611,8 @@
                                 <property name="n_columns">3</property>
                                 <child>
                                   <object class="GtkButton" id="xpym1">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -621,8 +622,8 @@
                                     <signal name="released" handler="on_xpym1_released"/>
                                     <child>
                                       <object class="GtkImage" id="image30">
-                                        <property name="width_request">84</property>
-                                        <property name="height_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="xalign">1</property>
                                         <property name="yalign">1</property>
@@ -639,8 +640,8 @@
                                 </child>
                                 <child>
                                   <object class="GtkButton" id="ym1">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -649,8 +650,8 @@
                                     <signal name="released" handler="on_ym_released"/>
                                     <child>
                                       <object class="GtkImage" id="image32">
-                                        <property name="width_request">84</property>
-                                        <property name="height_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="yalign">1</property>
                                         <property name="pixbuf">inY-.png</property>
@@ -666,8 +667,8 @@
                                 </child>
                                 <child>
                                   <object class="GtkButton" id="xmym1">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -677,8 +678,8 @@
                                     <signal name="released" handler="on_xmym1_released"/>
                                     <child>
                                       <object class="GtkImage" id="image33">
-                                        <property name="width_request">84</property>
-                                        <property name="height_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="xalign">0</property>
                                         <property name="yalign">1</property>
@@ -693,8 +694,8 @@
                                 </child>
                                 <child>
                                   <object class="GtkButton" id="xm1">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -703,7 +704,8 @@
                                     <signal name="released" handler="on_xm_released"/>
                                     <child>
                                       <object class="GtkImage" id="image34">
-                                        <property name="width_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="xalign">0</property>
                                         <property name="pixbuf">inX-.png</property>
@@ -717,8 +719,8 @@
                                 </child>
                                 <child>
                                   <object class="GtkButton" id="xy_hole">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -726,8 +728,8 @@
                                     <signal name="released" handler="on_xy_hole_released"/>
                                     <child>
                                       <object class="GtkImage" id="image35">
-                                        <property name="width_request">84</property>
-                                        <property name="height_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="pixbuf">inHole.png</property>
                                       </object>
@@ -742,8 +744,8 @@
                                 </child>
                                 <child>
                                   <object class="GtkButton" id="xp1">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -752,8 +754,8 @@
                                     <signal name="released" handler="on_xp_released"/>
                                     <child>
                                       <object class="GtkImage" id="image36">
-                                        <property name="width_request">84</property>
-                                        <property name="height_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="xalign">1</property>
                                         <property name="pixbuf">inX+.png</property>
@@ -769,8 +771,8 @@
                                 </child>
                                 <child>
                                   <object class="GtkButton" id="xpyp1">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -780,8 +782,8 @@
                                     <signal name="released" handler="on_xpyp1_released"/>
                                     <child>
                                       <object class="GtkImage" id="image37">
-                                        <property name="width_request">84</property>
-                                        <property name="height_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="xalign">1</property>
                                         <property name="yalign">0</property>
@@ -796,8 +798,8 @@
                                 </child>
                                 <child>
                                   <object class="GtkButton" id="yp1">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -806,8 +808,8 @@
                                     <signal name="released" handler="on_yp_released"/>
                                     <child>
                                       <object class="GtkImage" id="image38">
-                                        <property name="width_request">84</property>
-                                        <property name="height_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="yalign">0</property>
                                         <property name="pixbuf">inY+.png</property>
@@ -821,8 +823,8 @@
                                 </child>
                                 <child>
                                   <object class="GtkButton" id="xmyp1">
-                                    <property name="width_request">90</property>
-                                    <property name="height_request">90</property>
+                                    <property name="width_request">84</property>
+                                    <property name="height_request">76</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -832,8 +834,8 @@
                                     <signal name="released" handler="on_xmyp1_released"/>
                                     <child>
                                       <object class="GtkImage" id="image39">
-                                        <property name="width_request">84</property>
-                                        <property name="height_request">84</property>
+                                        <property name="width_request">78</property>
+                                        <property name="height_request">70</property>
                                         <property name="visible">True</property>
                                         <property name="xalign">0</property>
                                         <property name="yalign">0</property>
@@ -882,7 +884,7 @@
             </child>
             <child>
               <object class="GtkHBox" id="hbox2">
-                <property name="width_request">660</property>
+                <property name="width_request">640</property>
                 <property name="visible">True</property>
                 <child>
                   <object class="GtkFrame" id="frame8">
@@ -899,7 +901,7 @@
                             <child>
                               <object class="GtkButton" id="angle_xp">
                                 <property name="width_request">78</property>
-                                <property name="height_request">78</property>
+                                <property name="height_request">56</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -920,7 +922,7 @@
                             <child>
                               <object class="GtkButton" id="angle_yp">
                                 <property name="width_request">78</property>
-                                <property name="height_request">78</property>
+                                <property name="height_request">56</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -943,7 +945,7 @@
                             <child>
                               <object class="GtkButton" id="angle_xm">
                                 <property name="width_request">78</property>
-                                <property name="height_request">78</property>
+                                <property name="height_request">56</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -968,7 +970,7 @@
                             <child>
                               <object class="GtkButton" id="angle_ym">
                                 <property name="width_request">78</property>
-                                <property name="height_request">78</property>
+                                <property name="height_request">56</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
@@ -1026,7 +1028,7 @@
                                 <property name="n_columns">2</property>
                                 <child>
                                   <object class="GtkSpinButton" id="spbtn_offs_x">
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">20</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="tooltip_text" translatable="yes">New X offset</property>
@@ -1047,7 +1049,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkSpinButton" id="spbtn_offs_y">
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">20</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="tooltip_text" translatable="yes">New Y offset</property>
@@ -1068,7 +1070,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkSpinButton" id="spbtn_offs_z">
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">20</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="tooltip_text" translatable="yes">New Z offset</property>
@@ -1090,7 +1092,7 @@
                                 <child>
                                   <object class="GtkButton" id="btn1_set_x">
                                     <property name="width_request">28</property>
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">20</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -1115,7 +1117,7 @@
                                 <child>
                                   <object class="GtkButton" id="btn1_set_y">
                                     <property name="width_request">28</property>
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">20</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -1140,7 +1142,7 @@
                                 <child>
                                   <object class="GtkButton" id="btn1_set_z">
                                     <property name="width_request">28</property>
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">20</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -1165,7 +1167,7 @@
                                 <child>
                                   <object class="GtkCheckButton" id="chk_set_zero">
                                     <property name="label" translatable="yes">Auto Zero</property>
-                                    <property name="height_request">25</property>
+                                    <property name="height_request">16</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">False</property>
@@ -1178,9 +1180,10 @@
                                 <child>
                                   <object class="HAL_LED" id="hal_led_set_zero">
                                     <property name="width_request">28</property>
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">16</property>
                                     <property name="visible">True</property>
                                     <property name="tooltip_text" translatable="yes">On - auto set, Off - only measurement</property>
+                                    <property name="led_size">6</property>
                                     <property name="on_color">#a0a0a0a0a0a0</property>
                                     <property name="pick_color_off">#a0a0a0a0a0a0</property>
                                     <property name="blink_color">#a0a0a0a0a0a0</property>
@@ -1199,7 +1202,7 @@
                                 <child>
                                   <object class="GtkCheckButton" id="chk_auto_rott">
                                     <property name="label" translatable="yes">Auto Rot</property>
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">16</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">False</property>
@@ -1216,9 +1219,10 @@
                                 <child>
                                   <object class="HAL_LED" id="hal_led_auto_rott">
                                     <property name="width_request">28</property>
-                                    <property name="height_request">25</property>
+                                    <property name="height_request">16</property>
                                     <property name="visible">True</property>
                                     <property name="tooltip_text" translatable="yes">On - auto rotate, Off - only angle measurement </property>
+                                    <property name="led_size">6</property>
                                     <property name="on_color">#a0a0a0a0a0a0</property>
                                     <property name="pick_color_off">#a0a0a0a0a0a0</property>
                                     <property name="blink_color">#a0a0a0a0a0a0</property>
@@ -1238,7 +1242,7 @@
                                 </child>
                                 <child>
                                   <object class="GtkSpinButton" id="spbtn_offs_angle">
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">20</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="tooltip_text" translatable="yes">New rotate angle</property>
@@ -1260,7 +1264,7 @@
                                 <child>
                                   <object class="GtkButton" id="btn1_set_angle">
                                     <property name="width_request">28</property>
-                                    <property name="height_request">26</property>
+                                    <property name="height_request">20</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">True</property>
@@ -1316,8 +1320,7 @@
                         <property name="left_padding">10</property>
                         <child>
                           <object class="GtkTable" id="table4">
-                            <property name="width_request">380</property>
-                            <property name="height_request">120</property>
+                            <property name="width_request">350</property>
                             <property name="visible">True</property>
                             <property name="border_width">2</property>
                             <property name="n_rows">4</property>
@@ -1704,8 +1707,8 @@
                             </child>
                             <child>
                               <object class="GtkButton" id="down">
-                                <property name="width_request">100</property>
-                                <property name="height_request">30</property>
+                                <property name="width_request">60</property>
+                                <property name="height_request">21</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">True</property>
