@@ -4,3 +4,4 @@
 pos.txt
 *.bak
 *.var
+*.pyc
