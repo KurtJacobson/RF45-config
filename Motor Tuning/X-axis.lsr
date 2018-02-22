@@ -1,0 +1,17 @@
+Current Loop Kp=1500
+Current Loop Ki=200
+Micro Step Resolution=4000
+Encoder Resolution=4000
+Position Following Limit=1000
+Position Loop Kp=2500
+Position Loop Ki=500
+Position Loop Kd=100
+Position Loop Kvff=30
+Holding Current (%)=60
+Open-loop Current (%)=50
+Close-loop Current (%)=100
+Anti-interference Time=1000
+After disabling drive=1
+Fault Output=1
+Pulse Active Edge=0
+Pulse Input Mode=0
