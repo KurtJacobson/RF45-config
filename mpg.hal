@@ -6,6 +6,12 @@
 loadrt mpg
 addf mpg.0 servo-thread
 
+loadrt ilowpass
+addf ilowpass.0 servo-thread
+
+setp ilowpass.0.scale 1000
+setp ilowpass.0.gain 0.01
+
 # Set jog mode. For position mode set to 0, for velocity mode set to 1
 # X-axis
 setp joint.0.jog-vel-mode 0
@@ -28,10 +34,10 @@ setp axis.a.jog-vel-mode 0
 
 # Set selectable jog scales
 # These are set to default values by the mpg.comp. You can uncoment to set custom values.
-#setp mpg.0.mpg-scale1 0.01
-#setp mpg.0.mpg-scale2 0.001
-#setp mpg.0.mpg-scale3 0.0001
-#setp mpg.0.mpg-scale4 0.00001
+setp mpg.0.mpg-scale1 10.0
+setp mpg.0.mpg-scale2 1.0
+setp mpg.0.mpg-scale3 0.1
+setp mpg.0.mpg-scale4 0.01
 
 # Multiplexed inputs from axis selection switch
 net axis1 mpg.0.axis0 <= hm2_5i25.0.7i76.0.0.input-04
@@ -54,9 +60,11 @@ net mpg-scale => joint.1.jog-scale axis.y.jog-scale
 net mpg-scale => joint.2.jog-scale axis.z.jog-scale
 net mpg-scale => joint.3.jog-scale axis.a.jog-scale
 
+# The output from encoder counts is sent to ilowpass
+net mpg-counts-out ilowpass.0.in <= hm2_5i25.0.encoder.00.count
+
 # Send the encoder counts to the axis. Only the selected axis will move.
-net encoder-counts  <= hm2_5i25.0.encoder.00.count
-net encoder-counts => joint.0.jog-counts axis.x.jog-counts
-net encoder-counts => joint.1.jog-counts axis.y.jog-counts
-net encoder-counts => joint.2.jog-counts axis.z.jog-counts
-net encoder-counts => joint.3.jog-counts axis.a.jog-counts
+net mpg-counts-out => joint.0.jog-counts axis.x.jog-counts
+net mpg-counts-out => joint.1.jog-counts axis.y.jog-counts
+net mpg-counts-out => joint.2.jog-counts axis.z.jog-counts
+net mpg-counts-out => joint.3.jog-counts axis.a.jog-counts
