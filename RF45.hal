@@ -26,6 +26,15 @@ addf hm2_5i25.0.write         servo-thread
 
 # external input signals
 
+# --- BOTH-HOME-X ---
+net both-home-x     <=  hm2_5i25.0.7i76.0.0.input-08
+
+# --- BOTH-HOME-Y ---
+#net both-home-y     <=  hm2_5i25.0.7i76.0.0.input-09
+
+# --- BOTH-HOME-Z ---
+#net both-home-z     <=  hm2_5i25.0.7i76.0.0.input-10
+
 
 #*******************
 #  AXIS X
@@ -74,9 +83,9 @@ net x-enable     => hm2_5i25.0.stepgen.00.enable
 
 # ---setup home / limit switch signals---
 
-net x-home-sw     =>  joint.0.home-sw-in
-net x-neg-limit     =>  joint.0.neg-lim-sw-in
-net x-pos-limit     =>  joint.0.pos-lim-sw-in
+net both-home-x     =>  joint.0.home-sw-in
+net both-home-x     =>  joint.0.neg-lim-sw-in
+net both-home-x     =>  joint.0.pos-lim-sw-in
 
 #*******************
 #  AXIS Y
