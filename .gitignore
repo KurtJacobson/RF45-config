@@ -1,6 +1,8 @@
+pos.txt
+
 *.log
 *~
 *.pref
-pos.txt
 *.bak
 *.var
+*.old
