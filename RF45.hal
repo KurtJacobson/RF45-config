@@ -282,8 +282,8 @@ sets spindle-at-speed true
 
 # ---digital potentionmeter output signals/setup---
 
-setp hm2_5i25.0.7i76.0.0.spinout-minlim [SPINDLE]OUTPUT_MIN_LIMIT
-setp hm2_5i25.0.7i76.0.0.spinout-maxlim [SPINDLE]OUTPUT_MAX_LIMIT
+setp hm2_5i25.0.7i76.0.0.spinout-minlim [SPINDLE]MIN_OUTPUT
+setp hm2_5i25.0.7i76.0.0.spinout-maxlim [SPINDLE]MAX_OUTPUT
 setp hm2_5i25.0.7i76.0.0.spinout-scalemax [SPINDLE]OUTPUT_SCALE
 
 net spindle-output => hm2_5i25.0.7i76.0.0.spinout
