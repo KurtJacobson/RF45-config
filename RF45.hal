@@ -244,15 +244,15 @@ net a-pos-limit     =>  joint.3.pos-lim-sw-in
 #  SPINDLE S
 #*******************
 
-setp   pid.s.Pgain     [SPINDLE_9]P
-setp   pid.s.Igain     [SPINDLE_9]I
-setp   pid.s.Dgain     [SPINDLE_9]D
-setp   pid.s.bias      [SPINDLE_9]BIAS
-setp   pid.s.FF0       [SPINDLE_9]FF0
-setp   pid.s.FF1       [SPINDLE_9]FF1
-setp   pid.s.FF2       [SPINDLE_9]FF2
-setp   pid.s.deadband  [SPINDLE_9]DEADBAND
-setp   pid.s.maxoutput [SPINDLE_9]MAX_OUTPUT
+setp   pid.s.Pgain     [SPINDLE]P
+setp   pid.s.Igain     [SPINDLE]I
+setp   pid.s.Dgain     [SPINDLE]D
+setp   pid.s.bias      [SPINDLE]BIAS
+setp   pid.s.FF0       [SPINDLE]FF0
+setp   pid.s.FF1       [SPINDLE]FF1
+setp   pid.s.FF2       [SPINDLE]FF2
+setp   pid.s.deadband  [SPINDLE]DEADBAND
+setp   pid.s.maxoutput [SPINDLE]MAX_OUTPUT
 setp   pid.s.error-previous-target true
 
 net spindle-index-enable  <=> pid.s.index-enable
