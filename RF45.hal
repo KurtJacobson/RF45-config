@@ -30,10 +30,10 @@ addf hm2_5i25.0.write         servo-thread
 net both-home-x     <=  hm2_5i25.0.7i76.0.0.input-08
 
 # --- BOTH-HOME-Y ---
-#net both-home-y     <=  hm2_5i25.0.7i76.0.0.input-09
+net both-home-y     <=  hm2_5i25.0.7i76.0.0.input-09
 
 # --- BOTH-HOME-Z ---
-#net both-home-z     <=  hm2_5i25.0.7i76.0.0.input-10
+net both-home-z     <=  hm2_5i25.0.7i76.0.0.input-10
 
 
 #*******************
