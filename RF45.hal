@@ -285,6 +285,7 @@ sets spindle-at-speed true
 setp hm2_5i25.0.7i76.0.0.spinout-minlim [SPINDLE]MIN_OUTPUT
 setp hm2_5i25.0.7i76.0.0.spinout-maxlim [SPINDLE]MAX_OUTPUT
 setp hm2_5i25.0.7i76.0.0.spinout-scalemax [SPINDLE]OUTPUT_SCALE
+setp hm2_5i25.0.7i76.0.0.spindir-invert   false
 
 net spindle-output => hm2_5i25.0.7i76.0.0.spinout
 net spindle-enable => hm2_5i25.0.7i76.0.0.spinena
