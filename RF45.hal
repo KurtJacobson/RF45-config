@@ -26,6 +26,15 @@ addf hm2_5i25.0.write         servo-thread
 
 # external input signals
 
+# --- BOTH-HOME-X ---
+net both-home-x     <=  hm2_5i25.0.7i76.0.0.input-08
+
+# --- BOTH-HOME-Y ---
+net both-home-y     <=  hm2_5i25.0.7i76.0.0.input-09
+
+# --- BOTH-HOME-Z ---
+net both-home-z     <=  hm2_5i25.0.7i76.0.0.input-10
+
 
 #*******************
 #  AXIS X
@@ -74,9 +83,9 @@ net x-enable     => hm2_5i25.0.stepgen.00.enable
 
 # ---setup home / limit switch signals---
 
-net x-home-sw     =>  joint.0.home-sw-in
-net x-neg-limit     =>  joint.0.neg-lim-sw-in
-net x-pos-limit     =>  joint.0.pos-lim-sw-in
+net both-home-x     =>  joint.0.home-sw-in
+net both-home-x     =>  joint.0.neg-lim-sw-in
+net both-home-x     =>  joint.0.pos-lim-sw-in
 
 #*******************
 #  AXIS Y
@@ -125,9 +134,9 @@ net y-enable     => hm2_5i25.0.stepgen.01.enable
 
 # ---setup home / limit switch signals---
 
-net y-home-sw     =>  joint.1.home-sw-in
-net y-neg-limit     =>  joint.1.neg-lim-sw-in
-net y-pos-limit     =>  joint.1.pos-lim-sw-in
+net both-home-y     =>  joint.1.home-sw-in
+net both-home-y     =>  joint.1.neg-lim-sw-in
+net both-home-y     =>  joint.1.pos-lim-sw-in
 
 #*******************
 #  AXIS Z
@@ -176,9 +185,9 @@ net z-enable     => hm2_5i25.0.stepgen.02.enable
 
 # ---setup home / limit switch signals---
 
-net z-home-sw     =>  joint.2.home-sw-in
-net z-neg-limit     =>  joint.2.neg-lim-sw-in
-net z-pos-limit     =>  joint.2.pos-lim-sw-in
+net both-home-z     =>  joint.2.home-sw-in
+net both-home-z     =>  joint.2.neg-lim-sw-in
+net both-home-z     =>  joint.2.pos-lim-sw-in
 
 #*******************
 #  AXIS A
@@ -210,10 +219,10 @@ setp   hm2_5i25.0.stepgen.03.dirhold         [JOINT_3]DIRHOLD
 setp   hm2_5i25.0.stepgen.03.steplen         [JOINT_3]STEPLEN
 setp   hm2_5i25.0.stepgen.03.stepspace       [JOINT_3]STEPSPACE
 setp   hm2_5i25.0.stepgen.03.position-scale  [JOINT_3]STEP_SCALE
-setp   hm2_5i25.0.stepgen.03.step_type        0
-setp   hm2_5i25.0.stepgen.03.control-type     1
-setp   hm2_5i25.0.stepgen.03.maxaccel         [JOINT_3]STEPGEN_MAXACCEL
-setp   hm2_5i25.0.stepgen.03.maxvel           [JOINT_3]STEPGEN_MAXVEL
+setp   hm2_5i25.0.stepgen.03.step_type       0
+setp   hm2_5i25.0.stepgen.03.control-type    1
+setp   hm2_5i25.0.stepgen.03.maxaccel        [JOINT_3]STEPGEN_MAXACCEL
+setp   hm2_5i25.0.stepgen.03.maxvel          [JOINT_3]STEPGEN_MAXVEL
 
 # ---closedloop stepper signals---
 
@@ -227,30 +236,30 @@ net a-enable     => hm2_5i25.0.stepgen.03.enable
 
 # ---setup home / limit switch signals---
 
-net a-home-sw     =>  joint.3.home-sw-in
-net a-neg-limit     =>  joint.3.neg-lim-sw-in
-net a-pos-limit     =>  joint.3.pos-lim-sw-in
+net a-home-sw    =>  joint.3.home-sw-in
+net a-neg-limit  =>  joint.3.neg-lim-sw-in
+net a-pos-limit  =>  joint.3.pos-lim-sw-in
 
 #*******************
 #  SPINDLE S
 #*******************
 
-setp   pid.s.Pgain     [SPINDLE_9]P
-setp   pid.s.Igain     [SPINDLE_9]I
-setp   pid.s.Dgain     [SPINDLE_9]D
-setp   pid.s.bias      [SPINDLE_9]BIAS
-setp   pid.s.FF0       [SPINDLE_9]FF0
-setp   pid.s.FF1       [SPINDLE_9]FF1
-setp   pid.s.FF2       [SPINDLE_9]FF2
-setp   pid.s.deadband  [SPINDLE_9]DEADBAND
-setp   pid.s.maxoutput [SPINDLE_9]MAX_OUTPUT
+setp   pid.s.Pgain     [SPINDLE]P
+setp   pid.s.Igain     [SPINDLE]I
+setp   pid.s.Dgain     [SPINDLE]D
+setp   pid.s.bias      [SPINDLE]BIAS
+setp   pid.s.FF0       [SPINDLE]FF0
+setp   pid.s.FF1       [SPINDLE]FF1
+setp   pid.s.FF2       [SPINDLE]FF2
+setp   pid.s.deadband  [SPINDLE]DEADBAND
+setp   pid.s.maxoutput [SPINDLE]MAX_OUTPUT
 setp   pid.s.error-previous-target true
 
-net spindle-index-enable  <=> pid.s.index-enable
-net spindle-enable        =>  pid.s.enable
-net spindle-vel-cmd-rpm     => pid.s.command
-net spindle-vel-fb-rpm      => pid.s.feedback
-net spindle-output        <=  pid.s.output
+net spindle-index-enable     <=> pid.s.index-enable
+net spindle-enable           =>  pid.s.enable
+net spindle-vel-cmd-rpm-abs  =>  pid.s.command
+net spindle-vel-fb-rpm       =>  pid.s.feedback
+net spindle-output           <=  pid.s.output
 
 # ---setup spindle control signals---
 
@@ -270,6 +279,16 @@ net spindle-index-enable      <=>  spindle.0.index-enable
 # ---Setup spindle at speed signals---
 
 sets spindle-at-speed true
+
+# ---digital potentionmeter output signals/setup---
+
+setp hm2_5i25.0.7i76.0.0.spinout-minlim   [SPINDLE]MIN_OUTPUT
+setp hm2_5i25.0.7i76.0.0.spinout-maxlim   [SPINDLE]MAX_OUTPUT
+setp hm2_5i25.0.7i76.0.0.spinout-scalemax [SPINDLE]OUTPUT_SCALE
+
+net spindle-output => hm2_5i25.0.7i76.0.0.spinout
+net spindle-enable => hm2_5i25.0.7i76.0.0.spinena
+net spindle-ccw    => hm2_5i25.0.7i76.0.0.spindir
 
 
 #******************************
