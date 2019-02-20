@@ -35,6 +35,9 @@ net both-home-y     <=  hm2_5i25.0.7i76.0.0.input-09
 # --- BOTH-HOME-Z ---
 net both-home-z     <=  hm2_5i25.0.7i76.0.0.input-10
 
+# --- PROBE-IN ---
+net probe-in     <=  hm2_5i25.0.7i76.0.0.input-11-not
+
 
 #*******************
 #  AXIS X
