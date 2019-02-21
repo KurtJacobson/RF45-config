@@ -1,0 +1,22 @@
+;Simple sub for cutting a circle
+
+;Example usage:
+;  o<circle> call [x_pos] [y_pos] [dia] {[feed]})
+
+o<circle> sub
+  (put args into named parameters)
+  #<center_x_pos> = #1 (=0)
+  #<center_y_pos> = #2 (=0)
+  #<diameter> = #3     (=1)
+  #<feedrate> = #4     (=100)
+
+  (calculate radius)
+  #<radius> = [#<diameter> / 2]
+
+  (debug, Circle center: X#1, Y#2)
+  (debug, Circle radius: #<radius>)
+
+  F#<feedrate>
+  G0 X[#<center_x_pos> - #<radius>] Y[#2]
+  G2 X[#<center_x_pos> - #<radius>] Y[#<center_y_pos>] I[#<radius>] J0
+o<circle> endsub
